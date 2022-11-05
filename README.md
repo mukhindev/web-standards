@@ -4,4 +4,4 @@
 
 ## CSS
 
-[CSS Paint API](/css/css-painting-api)
+[CSS Painting API](/css/css-painting-api)
