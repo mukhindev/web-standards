@@ -4,5 +4,5 @@
 
 ## CSS
 
-[CSS custom properties](/css/css-custom-properties)
-[CSS Painting API](/css/css-painting-api)
+* [CSS custom properties](css/css-custom-properties)
+* [CSS Painting API](css/css-painting-api)
