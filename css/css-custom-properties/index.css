@@ -1,0 +1,82 @@
+@property --size {
+  syntax: "<lenght>";
+  inherits: false;
+  initial-value: 1rem;
+}
+
+@property --color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #000;
+}
+
+:root {
+  --text-color: black;
+  --bg-color: white;
+  --size-tiny: 1.5rem;
+  --size-small: 2rem;
+  --size-medium: 3rem;
+  --size-large: 4rem;
+  --color-primary: #3b9fee;
+  --color-danger: #f84949;
+  --color-warning: orange;
+  --color-success: #31d231;
+}
+
+.body--dark-mode {
+  --text-color: white;
+  --bg-color: #1e1e1e;
+  --color-primary: #0269b2;
+  --color-danger: red;
+  --color-warning: #cb7607;
+  --color-success: #0c930c;
+}
+
+body {
+  margin: 0;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  transition: background-color 0.3s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+button {
+  font: inherit;
+}
+
+.demo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2rem 0 0;
+  gap: 2rem;
+}
+
+.button {
+  color: var(--text-color);
+  --size: var(--size-medium);
+  --color: var(--color-primary);
+  font-size: calc(var(--size) / 2);
+  padding: 0 calc(var(--size) / 4);
+  border-radius: var(--radius, calc(var(--size) / 4));
+  background-color: var(--color);
+  min-height: var(--size);
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.main {
+  margin: 2rem;
+}

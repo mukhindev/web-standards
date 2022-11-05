@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>CSS custom properties</title>
+  </head>
+  <body class="body">
+    <div class="app">
+      <main class="main">
+        <h1 class="app__title">CSS custom properties (CSS Variables)</h1>
+        <section class="demo">
+          <label>
+            <input type="checkbox" class="mode-checkbox" />
+            <span>Темная тема</span>
+          </label>
+
+          <button class="button" style="--size: var(--size-large)">
+            Primary
+          </button>
+          <button class="button" style="--color: var(--color-danger)">
+            Danger
+          </button>
+          <button
+            class="button"
+            style="--color: var(--color-warning); --size: var(--size-small)"
+          >
+            Warning
+          </button>
+          <button
+            class="button"
+            style="--color: var(--color-success); --size: var(--size-tiny)"
+          >
+            Success
+          </button>
+          <button
+            class="button"
+            style="--color: violet; --size: 5rem; --radius: 2.5rem"
+          >
+            Custom 1
+          </button>
+          <button
+            class="button"
+            style="--color: #35acb7; --size: 40px; --radius: 0"
+          >
+            Custom 2
+          </button>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
