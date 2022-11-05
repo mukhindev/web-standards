@@ -6,7 +6,7 @@ import {
 } from "./constants.js";
 
 if ("paintWorklet" in CSS) {
-  CSS.paintWorklet.addModule("./field-progress-worklet.js");
+  CSS.paintWorklet.addModule("./field-progress-painter.js");
 
   CSS.registerProperty({
     name: CUSTOM_PROPERTY.LENGTH,

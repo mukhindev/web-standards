@@ -1,21 +1,3 @@
-/* @property --field-progress-length {
-  syntax: "<number>";
-  initial-value: 0;
-  inherits: false;
-}
-
-@property --field-progress-color {
-  syntax: "<color>";
-  initial-value: blue;
-  inherits: false;
-}
-
-@property --field-progress-height {
-  syntax: "<length>";
-  initial-value: "0";
-  inherits: false;
-} */
-
 :root {
   --size-tinny: 1rem;
   --size-small: 2rem;
@@ -69,19 +51,18 @@ input {
 
 @supports (background: paint(id)) {
   .input__field {
-    --field-progress-color: black;
-    --field-progress-height: 0;
+    --color: black;
+    --height: 0;
     background-image: paint(field-progress);
-    transition-property: --field-progress-length, --field-progress-color,
-      --field-progress-height, box-shadow;
-    transition-duration: 0.25s;
     border: none;
     outline: none;
     box-shadow: 0 0 0 2px #a4a4a4;
+    transition-property: --length, --color, --height, box-shadow;
+    transition-duration: 0.25s;
   }
 
   .input__field:focus {
-    --field-progress-height: 4px;
+    --height: 4px;
     box-shadow: 0 0 0 2px black;
   }
 }

@@ -5,9 +5,9 @@ export const COLOR = {
 };
 
 export const CUSTOM_PROPERTY = {
-  LENGTH: "--field-progress-length",
-  COLOR: "--field-progress-color",
-  HEIGHT: "--field-progress-height",
+  LENGTH: "--length",
+  COLOR: "--color",
+  HEIGHT: "--height",
 };
 
 export const PERFECT_PASSWORD_LENGTH = 12;
